@@ -2,9 +2,8 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 // view components
-import About from '../views/About';
-import Contact from '../views/Contact';
 import Home from '../views/Home';
+import Cities from '../views/Cities';
 
 const Main = () => {
     return(
@@ -12,8 +11,7 @@ const Main = () => {
             Main
             <Switch>
                 <Route exact path="/" component={Home} />
-                <Route path="/about" component={About} />
-                <Route path="/contact" component={Contact} />
+                <Route path="/cities" component={Cities} />
             </Switch>
         </div>
     )
